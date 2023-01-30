@@ -1,15 +1,15 @@
-let datas
-let front =1
-let buttonfirst
-let btn
-let z=1
+let datas  // for storing json data
+let front =1  
+let buttonfirst // this varibale is used to control next prev navigation buttons
+let btn  // this varibale is used to control next prev navigation buttons  for filtered results
+let z=1 // used for passing array elements
  
   // for reading json file
 $(document).ready(function(){
 $.getJSON("json/resume_details.json",function(data){
     document.querySelector(".errorpage").style.display="none"
     datas=data
-    display(datas,0)
+    display(datas,0)  
 })
 })
 
@@ -76,13 +76,9 @@ function back(){
     z=z-2
    }    
   
-  btn="r"
-      console.log("z for back="+z)
+      btn="r"
 
-     
-    console.log("z for back="+z)
-     
-    if(array[z]!=undefined)
+      if(array[z]!=undefined)
       {    
         document.getElementById("next").style.visibility="visible"
         if(z==0)

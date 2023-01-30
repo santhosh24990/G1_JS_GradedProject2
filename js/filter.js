@@ -1,5 +1,5 @@
 
-let array=[]
+let array=[] // for storing filtered  json data 
 
 let input = document.querySelector(".filterbox")
   input.addEventListener("keypress", function(event) {
