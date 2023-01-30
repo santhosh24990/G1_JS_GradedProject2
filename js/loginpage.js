@@ -3,7 +3,7 @@ let password
 function collect(){
 
    /* storing username and passwords into local storage */
-   localStorage.setItem("santhosh","9788445512")
+   localStorage.setItem("santhosh","9788445512")       // use santhosh and password 9788445512 for login
    localStorage.setItem("ramesh","8248176784") 
 
    username =document.getElementById("username").value
